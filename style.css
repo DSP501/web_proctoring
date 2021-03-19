@@ -1,0 +1,53 @@
+.enterExam {
+
+    /* margin-top: 20%;
+    margin-left: 50%; */
+    position: relative;
+
+}
+
+#main_div{
+
+    width: 1400px;
+    height: 650px;
+    border: 0px solid black;
+    margin-top: 0px;
+}
+
+/* .popyp{
+    margin-top: 20%;
+    margin-left: 50%;
+    position: relative;
+} */
+
+.time {
+    position: absolute;
+    /* border: 1px solid black; */
+    margin-top: -45%;
+    margin-left: 80%;
+    width: 200px;
+    height: 150px;
+
+}
+
+.exit {
+
+    position: absolute;
+    margin-top: -20%;
+    margin-left: 80%;
+    width: 200px;
+    height: 150px;
+
+}
+.inside_div {
+
+    position: relative;
+    width: 1400px;
+    height: 650px;
+}
+
+@media print {
+    html, body {
+       display: none;  /* hide whole page */
+    }
+}

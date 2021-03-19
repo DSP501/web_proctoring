@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Proctoring</title>
+  <link rel="icon" href="favicon.ico" type="image">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script defer src="./backend.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container align-middle" id="main_div" >
+
+    <div class="container inside_div align-right" id="content_div" style="display: none;">
+
+      <div class="container align-middle" id="frame_div">
+        <iframe src="" frameborder="0" oncontextmenu=menu() id="myframe"></iframe>
+      </div>
+
+      <div class="time" id="time_div">
+        <h1 id="time_header"></h1>
+        <h5 id="away_time"> </h5>
+      </div>
+
+      <div class="container exit border-5" id="exit_div">
+        <p>Click on End Exam once you have submitted the form</p>
+        <button type="button" class="btn btn-secondary">End Exam</button>
+      </div>
+
+    </div>
+    
+    <div class="enterExam position-absolute top-50 start-50 translate-middle" id="enter_div">
+      <button type="button" class="btn btn-primary btn-lg" onclick=fullScreen()>Start Test</button>
+    </div>
+    
+    <div class="popup position-absolute top-50 start-50 translate-middle"  id="pop_up" style="display: none;">
+      <div class="card bg-danger" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">ALERT!</h5>
+          <p class="card-text">You need to be in full Screen to give exam</p>
+          <button type="button" class="btn btn-primary btn-lg" onclick=goFullScreen()>Go Fullscreen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+    
+
+  
+  
+  <!-- <iframe src="https://forms.gle/rmyoTKsTw3eHrbCdA" frameborder="0" width="600" height="500"></iframe> -->
+</body>
+
+</html>
